@@ -1,9 +1,16 @@
 /* Header contacts */
 .contacts {
   display: flex;
-  align-items: center;
-  justify-content: center;
+
   margin-left: auto;
+
+  @include mq(mob-only) {
+    display: none;
+  }
+  @include mq(desk) {
+    flex-direction: row;
+    gap: 30px;
+  }
 }
 .contacts .item + .item {
   margin-left: 30px;
@@ -25,10 +32,15 @@
   transition: color var(--anim-fast);
 
   &:hover,
-&:focus {
-  color: var(--accent-color);
-  fill: var(--accent-color);
-}
+  &:focus {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+  }
+
+  @include mq(desk) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .contacts__icon {
@@ -36,6 +48,17 @@
   fill: currentColor;
 
   transition: fill var(--anim-fast);
+
+  @include mq(tab-only) {
+    &--mail {
+      width: 14px;
+      height: 10px;
+    }
+    &--phone {
+      width: 10px;
+      height: 14px;
+    }
+  }
 }
 .contacts .link {
   display: flex;

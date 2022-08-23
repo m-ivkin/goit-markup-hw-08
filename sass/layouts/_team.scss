@@ -1,6 +1,7 @@
 /* Team */
 .team {
   background-color: var(--studio-background-color);
+  @include section;
 }
 .team__name {
   display: flex;
@@ -25,7 +26,6 @@
   line-height: 1.18;
 }
 .container-team {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -34,9 +34,13 @@
 .team__list {
   display: flex;
   flex-wrap: wrap;
+
+  @include mq(desk) {
+    flex-wrap: nowrap;
+  }
 }
 .team__item {
-  width: calc((100% - 3 * 30px) / 4);
+  width: 100%;
   display: inline-block;
 
   background-color: var(--primary-white-color);
@@ -46,6 +50,10 @@
 
   &:not(:nth-child(4n)) {
     margin-right: 30px;
+  }
+
+  @include mq(tab) {
+    max-width: 354px;
   }
 }
 

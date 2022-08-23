@@ -3,6 +3,10 @@
   background-color: var(--footer-backgroung-color);
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @include mq(desk) {
+    text-align: left;
+  }
 }
 .footer__container {
   display: flex;

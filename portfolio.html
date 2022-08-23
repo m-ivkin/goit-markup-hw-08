@@ -70,7 +70,7 @@
     <!--Портфоліо-->
     <main>
       <div class="container">
-        <section class="section">
+        <section class="porfolio-section section">
           <h1 class="hidden">Портфоліо</h1>
           <ul class="portfolio-btn list">
             <li class="portfolio-btn__item">
@@ -103,11 +103,40 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio-thumb">
-                  <img
-                    src="./images/Portfolio/img.jpg"
-                    alt="Технокряк"
-                    width="370"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/technokryak_desk@1x.jpg 1x,
+                        ./images/portfolio/technokryak_desk@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/technokryak_tab@1x.jpg 1x,
+                        ./images/portfolio/technokryak_tab@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/technokryak_mob@1x.jpg 1x,
+                        ./images/portfolio/technokryak_mob@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/technokryak_mob@1x.jpg"
+                      alt="Технокряк"
+                      width="450"
+                    />
+                  </picture>
                   <div class="portfolio-wrap">
                     <p class="">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -126,11 +155,40 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio-thumb">
-                  <img
-                    src="./images/Portfolio/img-1.jpg"
-                    alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/basketball_desk@1x.jpg 1x,
+                        ./images/portfolio/basketball_desk@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/basketball_tab@1x.jpg 1x,
+                        ./images/portfolio/basketball_tab@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/basketball_mob@1x.jpg 1x,
+                        ./images/portfolio/basketball_mob@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/basketball_mob@1x.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                      width="450"
+                    />
+                  </picture>
                   <div class="portfolio-wrap">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -151,11 +209,40 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio-thumb">
-                  <img
-                    src="./images/Portfolio/img-2.jpg"
-                    alt="Ресторан Seafood"
-                    width="370"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/seafood_desk@1x.jpg 1x,
+                        ./images/portfolio/seafood_desk@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/seafood_tab@1x.jpg 1x,
+                        ./images/portfolio/seafood_tab@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/seafood_mob@1x.jpg 1x,
+                        ./images/portfolio/seafood_mob@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/seafood_mob@1x.jpg"
+                      alt="Ресторан Seafood"
+                      width="450"
+                    />
+                  </picture>
                   <div class="portfolio-wrap">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -174,11 +261,39 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio-thumb">
-                  <img
-                    src="./images/Portfolio/img-3.jpg"
-                    alt="Проєкт Prime"
-                    width="370"
+                  <!-- Desktop screen -->
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/portfolio/prime_desk@1x.jpg 1x,
+                      ./images/portfolio/prime_desk@2x.jpg 2x
+                    "
+                    type="image/jpg"
                   />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/prime_tab@1x.jpg 1x,
+                      ./images/portfolio/prime_tab@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/prime_mob@1x.jpg 1x,
+                      ./images/portfolio/prime_mob@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images/portfolio/prime_mob@1x.jpg"
+                    alt="Проєкт Prime"
+                    width="450"
+                  />
+                  </picture>
                   <div class="portfolio-wrap">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -197,11 +312,27 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio-thumb">
+                  <!-- Desktop screen -->
+                                    <source media="(min-width: 1200px)" srcset="
+                                                                        ./images/portfolio/boxes_desk@1x.jpg 1x,
+                                                                        ./images/portfolio/boxes_desk@2x.jpg 2x
+                                                                        " type="image/jpg" />
+
+                                    <source media="(min-width: 768px)" srcset="
+                                                                        ./images/portfolio/boxes_tab@1x.jpg 1x,
+                                                                        ./images/portfolio/boxes_tab@2x.jpg 2x
+                                                                        " type="image/jpg" />
+
+                                    <source media="(max-width: 767px)" srcset="
+                                                                        ./images/portfolio/boxes_mob@1x.jpg 1x,
+                                                                        ./images/portfolio/boxes_mob@2x.jpg 2x
+                                                                         " type="image/jpg" />
                   <img
-                    src="./images/Portfolio/img-4.jpg"
+                    src="./images/portfolio/boxes_mob@1x.jpg"
                     alt="Проєкт Boxes"
-                    width="370"
+                    width="450"
                   />
+                  </picture>
                   <div class="portfolio-wrap">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -220,11 +351,27 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio-thumb">
+                  <!-- Desktop screen -->
+                                    <source media="(min-width: 1200px)" srcset="
+                                                                        ./images/portfolio/inspiration_desk@1x.jpg 1x,
+                                                                        ./images/portfolio/inspiration_desk@2x.jpg 2x
+                                                                        " type="image/jpg" />
+
+                                    <source media="(min-width: 768px)" srcset="
+                                                                        ./images/portfolio/inspiration_tab@1x.jpg 1x,
+                                                                        ./images/portfolio/inspiration_tab@2x.jpg 2x
+                                                                        " type="image/jpg" />
+
+                                    <source media="(max-width: 767px)" srcset="
+                                                                        ./images/portfolio/inspiration_mob@1x.jpg 1x,
+                                                                        ./images/portfolio/inspiration_mob@2x.jpg 2x
+                                                                         " type="image/jpg" />
                   <img
-                    src="./images/Portfolio/img-5.jpg"
+                    src="./images/portfolio/inspiration_mob@1x.jpg"
                     alt="Inspiration has no Borders"
-                    width="370"
+                    width="450"
                   />
+                  </picture>
                   <div class="portfolio-wrap">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -243,11 +390,27 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio-thumb">
+                  <!-- Desktop screen -->
+                                    <source media="(min-width: 1200px)" srcset="
+                                                                    ./images/portfolio/limited_desk@1x.jpg 1x,
+                                                                    ./images/portfolio/limited_desk@2x.jpg 2x
+                                                                    " type="image/jpg" />
+
+                                    <source media="(min-width: 768px)" srcset="
+                                                                    ./images/portfolio/limited_tab@1x.jpg 1x,
+                                                                    ./images/portfolio/limited_tab@2x.jpg 2x
+                                                                    " type="image/jpg" />
+
+                                    <source media="(max-width: 767px)" srcset="
+                                                                    ./images/portfolio/limited_mob@1x.jpg 1x,
+                                                                    ./images/portfolio/limited_mob@2x.jpg 2x
+                                                                     " type="image/jpg" />
                   <img
-                    src="./images/Portfolio/img-6.jpg"
+                    src="./images/portfolio/limited_mob@1x.jpg"
                     alt="Видання Limited Edition"
-                    width="370"
+                    width="450"
                   />
+                  </picture>
                   <div class="portfolio-wrap">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -266,11 +429,27 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio-thumb">
+                  <!-- Desktop screen -->
+                                    <source media="(min-width: 1200px)" srcset="
+                                                                        ./images/portfolio/lab_desk@1x.jpg 1x,
+                                                                        ./images/portfolio/lab_desk@2x.jpg 2x
+                                                                        " type="image/jpg" />
+
+                                    <source media="(min-width: 768px)" srcset="
+                                                                        ./images/portfolio/lab_tab@1x.jpg 1x,
+                                                                        ./images/portfolio/lab_tab@2x.jpg 2x
+                                                                        " type="image/jpg" />
+
+                                    <source media="(max-width: 767px)" srcset="
+                                                                        ./images/portfolio/lab_mob@1x.jpg 1x,
+                                                                        ./images/portfolio/lab_mob@2x.jpg 2x
+                                                                         " type="image/jpg" />
                   <img
-                    src="./images/Portfolio/img-7.jpg"
+                    src="./images/portfolio/lab_mob@1x.jpg"
                     alt="Проект LAB"
-                    width="370"
+                    width="450"
                   />
+                  </picture>
                   <div class="portfolio-wrap">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -289,11 +468,27 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio-thumb">
+                  <!-- Desktop screen -->
+                                    <source media="(min-width: 1200px)" srcset="
+                                                                        ./images/portfolio/grow-buisness_desk@1x.jpg 1x,
+                                                                        ./images/portfolio/grow-buisness_desk@2x.jpg 2x
+                                                                        " type="image/jpg" />
+
+                                    <source media="(min-width: 768px)" srcset="
+                                                                        ./images/portfolio/grow-buisness_tab@1x.jpg 1x,
+                                                                        ./images/portfolio/grow-buisness_tab@2x.jpg 2x
+                                                                        " type="image/jpg" />
+
+                                    <source media="(max-width: 767px)" srcset="
+                                                                        ./images/portfolio/grow-buisness_mob@1x.jpg 1x,
+                                                                        ./images/portfolio/grow-buisness_mob@2x.jpg 2x
+                                                                         " type="image/jpg" />
                   <img
-                    src="./images/Portfolio/img-8.jpg"
+                    src="./images/portfolio/grow-buisness_mob@1x.jpg"
                     alt="Growing Business"
-                    width="370"
+                    width="450"
                   />
+                  </picture>
                   <div class="portfolio-wrap">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем

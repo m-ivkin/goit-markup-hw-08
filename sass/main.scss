@@ -1,6 +1,8 @@
 //Utils styles
 @import "./utils/variables";
-@import "./utils/placeholders" // Base styles
+@import "./utils/mixin";
+
+// Base styles
   @import "./base/common";
 @import "./base/reset";
 

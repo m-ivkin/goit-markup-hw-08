@@ -3,6 +3,10 @@
 }
 .nav__list {
   display: flex;
+
+  @include mq(mob-only) {
+    display: none;
+  }
 }
 .nav__item:not(:last-child) {
   margin-right: 50px;

@@ -1,7 +1,16 @@
 /* Clients */
+.clients {
+  @include section;
+}
+
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+
+  @include mq(desk) {
+    flex-wrap: nowrap;
+  }
 }
 .clients__item {
   display: flex;

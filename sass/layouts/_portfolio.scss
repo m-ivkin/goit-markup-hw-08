@@ -1,4 +1,8 @@
 /* Portfolio */
+.porfolio-section {
+  @include section;
+}
+
 .portfolio {
   display: flex;
   flex-wrap: wrap;

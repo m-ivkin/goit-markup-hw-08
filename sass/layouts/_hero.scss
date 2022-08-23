@@ -1,43 +1,95 @@
 .hero {
-  background-color: var(--title-backroung-color);
   padding-top: 200px;
   padding-bottom: 200px;
-  height: 600px;
+  min-height: 600px;
   max-width: 1600px;
+
+  background-color: var(--title-backroung-color);
+
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/Img_title.jpg);
+    url(../images/hero/hero@1x_sm.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @include mq(retina) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero@2x_sm.jpg);
+  }
+
+  // mobile
+
+  @include mq(mob) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero@1x_md.jpg);
+
+    @include mq(retina) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero/hero@2x_md.jpg);
+    }
+  }
+
+  // tab
+
+  @include mq(tab) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero@1x_lg.jpg);
+
+    @include mq(retina) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero/hero@2x_lg.jpg);
+    }
+  }
 }
 
 .hero__title {
-  box-sizing: border-box;
-  display: block;
+  max-width: 360px;
   margin-left: auto;
   margin-right: auto;
-  width: 696px;
-  height: 120px;
-  margin-top: 0;
   margin-bottom: 30px;
-  text-align: center;
 
-  color: var(--primary-white-color);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
+
+  color: var(--primary-white-color);
+
+  @include mq(desk) {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__container {
   display: block;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
