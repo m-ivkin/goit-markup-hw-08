@@ -1,0 +1,48 @@
+// Reset start
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+address {
+  font-style: normal;
+}
+input,
+textarea {
+  outline: none;
+}
+/* List */
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.section.no__padding {
+  padding-top: 0;
+}
+.hidden {
+  visibility: hidden;
+  margin: 0;
+  font-size: 0;
+  margin-block: 0;
+}
+//Reset end

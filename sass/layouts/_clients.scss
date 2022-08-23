@@ -1,0 +1,30 @@
+/* Clients */
+.clients__list {
+  display: flex;
+  justify-content: space-between;
+}
+.clients__item {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  min-width: 170px;
+  height: 92px;
+
+  color: var(--icon-primary-color);
+  border: 1px solid var(--icon-primary-color);
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: border var(--anim-fast);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
+.clients__icon {
+  fill: currentColor;
+  align-self: center;
+  transition: color var(--anim-fast);
+}

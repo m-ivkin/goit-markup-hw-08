@@ -1,0 +1,120 @@
+/* Form modal */
+.form {
+  width: 528px;
+  height: 581px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+}
+.form__field {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.form__title {
+  margin-bottom: 12px;
+  text-align: center;
+  font-style: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 3%;
+}
+.form__label {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 1%;
+  color: var(--paragraph-text-color);
+  margin-bottom: 4px;
+}
+
+.form__field input {
+  margin: 0;
+  padding: 12px 40px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+.form-field-comment {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.comment {
+  margin: 0;
+  padding: 12px 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 1%;
+  }
+}
+
+.comment:focus {
+  border-color: var(--accent-color);
+}
+
+.form__input:focus {
+  border-color: var(--accent-color);
+}
+.form__icon {
+  position: absolute;
+  top: 55%;
+  left: 14px;
+
+  display: inline-block;
+}
+.form__icon-first {
+  position: absolute;
+  top: 70%;
+  left: 14px;
+
+  display: inline-block;
+}
+.form__input:focus ~ .form__icon {
+  fill: var(--accent-color);
+}
+.form__input:focus ~ .form__icon-first {
+  fill: var(--accent-color);
+}
+.form__checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  position: absolute;
+}
+.form__checkbox-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 9px;
+  border-radius: 2px;
+}
+.form__terms {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.form__checkbox:checked + .form__checkbox-icon {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+  background-image: url(../images/svg/Check-it.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+.form__terms-text {
+  line-height: 1.71;
+  color: var(--paragraph-text-color);
+}
+.form__terms-link {
+  color: var(--accent-color);
+  text-decoration: underline;
+}

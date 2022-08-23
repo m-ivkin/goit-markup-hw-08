@@ -1,0 +1,29 @@
+// Header logo
+.nav__logo {
+  display: flex;
+  align-items: center;
+  margin-right: 93px;
+
+  color: var(--accent-color);
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+.logo__part--dark {
+  color: var(--logo-color);
+}
+// Footer logo
+.footer__logo {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-family: raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.logo__part--light {
+  color: var(--primary-white-color);
+}
